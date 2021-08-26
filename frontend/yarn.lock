@@ -6644,6 +6644,11 @@ jest@26.6.0:
     import-local "^3.0.2"
     jest-cli "^26.6.0"
 
+jquery@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.0.tgz#c72a09f15c1bdce142f49dbf1170bdf8adac2470"
+  integrity sha512-JVzAR/AjBvVt2BmYhxRCSYysDsPcssdmTFnzyLEts9qNwmjmu4JTAMYubEfwVOSwpQ1I1sKKFcxhZCI2buerfw==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -8901,10 +8906,10 @@ q@^1.1.2:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
-qr.js@0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/qr.js/-/qr.js-0.0.0.tgz#cace86386f59a0db8050fa90d9b6b0e88a1e364f"
-  integrity sha1-ys6GOG9ZoNuAUPqQ2baw6IoeNk8=
+qr-image-color@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/qr-image-color/-/qr-image-color-3.2.1.tgz#9d40e31edd85e71aef4ed6f13d2d57fff0391483"
+  integrity sha512-3KcE4rGaYy9I6loQQlrHugNWIlOk31obcq11hmGQKhPIwCPs78xm0vXBh5dAsAwhDcxRpiMx5TzhW1BDtvbwzQ==
 
 qs@6.7.0:
   version "6.7.0"
@@ -9059,13 +9064,12 @@ react-is@^17.0.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   integrity sha512-NAnt2iGDXohE5LI7uBnLnqvLQMtzhkiAOLXTmv+qnF9Ky7xAPcX8Up/xWIhxvLVGJvuLiNc4xQLtuqDRzb4fSA==
 
-react-qr-code@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/react-qr-code/-/react-qr-code-2.0.2.tgz#64107c869079aceb897c97496d163720ab2820e8"
-  integrity sha512-73VGe81MgeE5FJNFgdY42ez/wPPJTHuooU3iE4CX+6F8M88O1Gg4zNA0L4bKEpoySQ0QjqreJgyXjFrG/QfsdA==
+react-qr-image@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/react-qr-image/-/react-qr-image-1.0.2.tgz#fd4383b143a235b22472968b85e9fa9a2bee510e"
+  integrity sha512-MTag9VAsDxvimx1xUAJ2qsM9B7TAFplNOuDbkp1Eu3GyYJ5WOC6imVy6EP3usse/66MjfA2mYsk9JuF/x/EBww==
   dependencies:
-    prop-types "^15.7.2"
-    qr.js "0.0.0"
+    qr-image-color "^3.2.1"
 
 react-refresh@^0.8.3:
   version "0.8.3"

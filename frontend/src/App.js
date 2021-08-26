@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import superagent from "superagent";
-import QRCode from "react-qr-code";
+import QRCode from "react-qr-image";
+import { param } from "jquery";
 
-const BASE_URL = "localhost:3010";
+const BASE_URL = "http://localhost:3010";
 
 function App() {
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -11,10 +12,17 @@ function App() {
 
   const onConnect = async () => {
     const result = await superagent.get(BASE_URL + "/connect");
-    setQrCode(result);
+    setQrCode(result.text);
   }
 
-  const onSendMessage = () => {}
+  const onSendMessage = async () => {
+    const query = param({
+      number: phoneNumber,
+      message,
+    });
+
+    await superagent.get(`${BASE_URL}/send?${query}`);
+  }
 
   return (
     <div className="App">
@@ -25,7 +33,7 @@ function App() {
       </button>
 
       {qrCode && (
-        <QRCode value={qrCode} />
+        <QRCode text={qrCode} />
       )}
 
       <p>Número:</p>
@@ -43,7 +51,7 @@ function App() {
       <button
         onClick={onSendMessage}
       >
-        Conectar
+        Enviar
       </button>
     </div>
   );
